@@ -9,7 +9,7 @@ function updateDateTime() {
 	var b = Math.abs(new Date("2001/05/06")-now);
 
 	var c = new Date("2023/09/01");
-	var d = Math.abs(c-now);
+	var d = Math.abs(c - now);
 
 	document.getElementById("a").innerHTML = spanA + " " + truncate((d * 100) / a, 10) + " %";
 	document.getElementById("b").innerHTML = spanB + " " +  truncate((d * 100) / b, 10) + " %";
