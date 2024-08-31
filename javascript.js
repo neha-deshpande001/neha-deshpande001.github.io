@@ -9,18 +9,18 @@ function updateDateTime() {
 	var b = Math.abs(new Date("2001/05/06")-now);
 
 	var c = new Date("2023/09/01");
-	var d = Math.abs(c-d);
+	var d = Math.abs(c-now);
 
-	document.getElementById("a").innerHTML = spanS + " " + truncate((d * 100) / a, 10) + " %";
-	document.getElementById("b").innerHTML = spanN + " " +  truncate((d * 100) / b, 10) + " %";
+	document.getElementById("a").innerHTML = spanA + " " + truncate((d * 100) / a, 10) + " %";
+	document.getElementById("b").innerHTML = spanB + " " +  truncate((d * 100) / b, 10) + " %";
 
 }
 
 // call the `updateDateTime` function every second
 setInterval(updateDateTime, 100);
 
-var strS = "✧✧Mysterious✧✧ Number #1:"
-var strN = "✧✧Mysterious✧✧ Number #2:"
+var strA = "✧✧Mysterious✧✧ Number #1:"
+var strB = "✧✧Mysterious✧✧ Number #2:"
 
 function getRandomNumber(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
